@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family:'Android';
+    src: url('/Aulas/Mundo\ 2/site android/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #a5facb;
+    --cor2: #83e1ad;
+    --cor3: #3ddc84;
+    --cor4: #2fa866;
+    --cor5: #1a5c37;
+    --cor6: #063d1e;
+
+    --fonte-padrao: Arial,Verdana , Helvetica,sans-serif;
+    --fonte-destaque: 'Bebas Neue','cursive';
+    --fonte-android: 'Android', 'cursive';
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+           /*Body Config*/
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+
+
+          /*Header Config*/
+header{
+    /*background-image: linear-gradient(to bottom, var(--cor3), var (var(--cor4)));*/
+    background-image: linear-gradient(var(--cor3),  var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header >h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    font-weight: normal;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.507);
+    
+}
+
+header > p{
+    font-size: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.507);
+}
+           /*Nav Config*/
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.589);
+   
+}
+nav > a{
+    color: var(--cor1);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+nav > a:hover{
+    background-color: #3ddc84;
+    color: white;
+
+}
+
+
+           /*Main Config*/
+main{
+    background-color: white;
+    min-width:300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.521) ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong > a{
+    color: var(--cor6);
+    font-weight: bold;
+    background-color: var(--cor1);
+    padding: 2px;
+}
+main a{
+    text-decoration: none;
+}
+main a:hover{
+    color: var(--cor4);
+    text-decoration: underline;
+    
+}
+main img{
+    width: 100%;
+}
+main img.pequena{
+    
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+main h1{
+    font-family: var(--fonte-android);
+    color: var(--cor5);
+    font-size: 1.8em;
+    font-weight: normal;
+    
+}
+
+main h2{
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor2),transparent);
+    font-size: 1.4em;
+    font-weight: normal;
+    font-family: var(--fonte-android);
+    
+    
+}
+aside{
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+}
+aside > ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.705);
+}
+
+div.video{
+    background-color: white;
+    margin: 0px -20px 40px -20px;
+    padding-bottom: 59.0%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    min-width: 278px;
+    min-height: 245px;
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+    
+}
+
+            /*Footer Config*/
+footer{
+    background-color: var(--cor6);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+footer a{
+    color: var(--cor2);
+}
+footer >p>a:hover{
+    color: var(--cor3);
+    text-decoration: none;
+}
+a.externo::after{
+    content: '\00A0\1f517';
+}
